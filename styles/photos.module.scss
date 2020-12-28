@@ -1,0 +1,23 @@
+@import "../styles/variables.scss";
+
+.thumbnail {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.gallery {
+  padding: 10px 40px 40px 40px;
+  text-align: center;
+}
+
+.heading {
+  color: $text-gold;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  border-bottom: 1px solid $text-gold;
+}

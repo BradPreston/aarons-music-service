@@ -1,0 +1,67 @@
+@import "./variables.scss";
+@mixin background($dark-color, $light-color, $opacity: 0.8) {
+  background-image: linear-gradient(
+      to top right,
+      rgba($dark-color, $opacity),
+      rgba($light-color, $opacity)
+    ),
+    url("../assets/images/background.png");
+  background-position: 80%;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.mobile_layout {
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    &__header {
+      position: fixed;
+      bottom: 0;
+      height: 30px;
+      width: 100vw;
+    }
+
+    &__main {
+      @include background($bg-dark-gold, $bg-light-gold);
+      margin-top: 0;
+      height: calc(100vh - 80px);
+      width: 100vw;
+      overflow: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      &-children {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    &__footer {
+      background: $bg-dark;
+      height: 30px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+      width: 100vw;
+      color: $text-gold;
+
+      p {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        bottom: 0;
+        height: 30px;
+      }
+    }
+  }
+}

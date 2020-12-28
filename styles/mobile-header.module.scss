@@ -1,0 +1,27 @@
+@import "../styles/variables.scss";
+
+.header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background: $bg-dark;
+  color: $text-gold;
+
+  &_logo img {
+    height: 30px;
+  }
+
+  &_call {
+    font-size: 1.6rem;
+
+    i {
+      margin-right: 5px;
+    }
+
+    &:hover {
+      color: rgba($text-gold, 0.7);
+    }
+  }
+}
