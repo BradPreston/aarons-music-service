@@ -69,7 +69,7 @@
     p {
         color: var(--main-color);
         font-size: 1.4rem;
-        font-weight: 200;
+        font-weight: 300;
         margin: 30px 0 10px 0;
         text-align: center;
     }

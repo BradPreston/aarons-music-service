@@ -12,7 +12,7 @@
     <h1>Contact</h1>
     <section>
         <div class="contact-links">
-            <a href="tel:269-823-2628">Call: (269) 649-3929</a>
+            <a href="tel:269-649-3292">Call: (269) 649-3929</a>
             <a href="mailto: steve@aaronsmusicservice.com">Email: steve@aaronsmusicservice.com</a>
             <div class="social-icons">
                 <a href="https://www.facebook.com/aaronsmusicservice/" target="_blank" class="social-link">
