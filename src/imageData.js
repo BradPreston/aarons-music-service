@@ -1,0 +1,18 @@
+export const images = [
+    {id: 0, fileName: 'Aaron_frame', alt: 'Picture of Aaron'},
+    {id: 1, fileName: 'body_2', alt: 'Unfinished acoustic body'},
+    {id: 2, fileName: 'body', alt: 'Unfinished acoustic body'},
+    {id: 3, fileName: 'cases', alt: 'Guitar cases'},
+    {id: 4, fileName: 'headstock', alt: 'Jubal headstock'},
+    {id: 5, fileName: 'inlays', alt: 'Jubal fretboard inlays'},
+    {id: 6, fileName: 'jubal_acoustic_1', alt: 'Jubal acoustic body'},
+    {id: 7, fileName: 'label', alt: 'Jubal label'},
+    {id: 8, fileName: 'mandolin_1', alt: 'Old Gibson mandolin'},
+    {id: 9, fileName: 'mandolin_2', alt: 'Old Gibson mandolin'},
+    {id: 10, fileName: 'mandolin_3', alt: 'Old Gibson mandolin'},
+    {id: 11, fileName: 'newspaper', alt: 'Newspaper of Aaron\'s Music Service'},
+    {id: 12, fileName: 'sound_hole', alt: 'Sound hole on Jubal acoustic'},
+    {id: 13, fileName: 'steve_working', alt: 'Steve working on a guitar'},
+    {id: 14, fileName: 'Strings', alt: 'Strings for sale'},
+    {id: 15, fileName: 'tools', alt: 'Workbench tools'},
+];
