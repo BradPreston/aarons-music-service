@@ -4,8 +4,6 @@
 
 <script>
     import { activeNavLink } from './stores';
-
-    activeNavLink.set('home');
 </script>
 
 <div class="wrapper">

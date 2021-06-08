@@ -1,3 +1,6 @@
 import { writable } from 'svelte/store';
 
-export const activeNavLink = writable('home');
+const storedLink = localStorage.activeNavLink;
+export const activeNavLink = writable(storedLink || 'home');
+
+activeNavLink.subscribe(val => localStorage.activeNavLink = val);

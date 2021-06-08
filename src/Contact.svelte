@@ -2,12 +2,6 @@
     <title>Home | Aaron's Music Service</title>
 </svelte:head>
 
-<script>
-    import { activeNavLink } from './stores';
-
-    activeNavLink.set('contact');
-</script>
-
 <div class="wrapper">
     <h1>Contact</h1>
     <section>
