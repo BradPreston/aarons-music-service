@@ -4,6 +4,8 @@
 
 <script>
     import { activeNavLink } from './stores';
+
+    activeNavLink.set('home');
 </script>
 
 <div class="wrapper">
@@ -120,17 +122,7 @@
         }
     }
 
-    @media only screen and (min-width: 481px) {
-        h1 {
-            font-size: 5rem;
-        }
-
-        h2 {
-            font-size: 2.9rem;
-        }
-    }
-
-    @media only screen and (min-width: 769px) {
+    @media only screen and (min-width: 900px) {
         h1 {
             font-size: 7rem;
             line-height: .9;

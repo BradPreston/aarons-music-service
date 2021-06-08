@@ -5,6 +5,9 @@
 <script>
     import Lightbox from './components/gallery/Lightbox.svelte';
     import ImageDisplay from './components/gallery/ImageDisplay.svelte';
+    import { activeNavLink } from './stores';
+
+    activeNavLink.set('photos');
 
     let modalOpen = false;
 

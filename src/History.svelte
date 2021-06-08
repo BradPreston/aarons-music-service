@@ -2,6 +2,12 @@
     <title>History | Aaron's Music Service</title>
 </svelte:head>
 
+<script>
+    import { activeNavLink } from './stores';
+
+    activeNavLink.set('history');
+</script>
+
 <div class="wrapper">
     <section>
     <h1>Our History</h1>

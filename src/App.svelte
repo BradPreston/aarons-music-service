@@ -200,7 +200,7 @@
 		color: var(--main-color);
 	}
 
-	@media only screen and (min-width: 769px) {
+	@media only screen and (min-width: 900px) {
 		nav {
 			padding-right: 0;
 		}

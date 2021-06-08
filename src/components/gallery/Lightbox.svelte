@@ -151,7 +151,7 @@
        }
    }
 
-   @media only screen and (min-width: 769px) {
+   @media only screen and (min-width: 900px) {
        .lightbox {
            width: 700px;
        }
