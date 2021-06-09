@@ -6,10 +6,10 @@ import { images } from '../../imageData';
     {#each images as { id, fileName, alt }}
         <div class="demo-container">
             <picture>
-                <source srcset="/images/gallery/{fileName}.webp" type="image/webp" />
-                <source srcset="/images/gallery/{fileName}.jpg" type="image/jpg" />
+                <source srcset="../images/gallery/{fileName}.webp" type="image/webp" />
+                <source srcset="../images/gallery/{fileName}.jpg" type="image/jpg" />
 
-                <img {id} src='/images/gallery/{fileName}.jpg' alt={alt} on:click />
+                <img {id} src='../images/gallery/{fileName}.jpg' alt={alt} on:click />
             </picture>
         </div>
     {/each}
@@ -39,11 +39,5 @@ import { images } from '../../imageData';
 
     img:hover {
         box-shadow: 0 0 13px rgba(0, 0, 0, .8);
-    }
-
-    @media only screen and (min-width: 769px) {
-        .demo-container {
-            width: 25%;
-        }
     }
 </style>

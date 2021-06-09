@@ -73,6 +73,7 @@
         font-size: 3rem;
         padding-bottom: 10px;
         margin-bottom: 20px;
+        font-weight: 100;
         border-bottom: 1px solid var(--main-color);
     }
 
@@ -135,6 +136,11 @@
     }
 
     @media only screen and (min-width: 769px) {
+        .wrapper {
+            width: 60vw;
+            margin: 50px auto;
+        }
+
         section {
             display: flex;
             flex-flow: row-reverse;

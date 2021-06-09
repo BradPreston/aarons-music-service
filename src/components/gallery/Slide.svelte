@@ -9,8 +9,8 @@
 <div class="mySlides" class:show={imageShowing}>
     <div class="numbertext">{slideNumber} / {totalSlides}</div>
     <picture>
-        <source srcset='/images/gallery/{image}.webp' type="image/webp" />
-        <source srcset='/images/gallery/{image}.jpg' type="image/jpg" />
+        <source srcset='../images/gallery/{image}.webp' type="image/webp" />
+        <source srcset='../images/gallery/{image}.jpg' type="image/jpg" />
         <img src='/images/gallery/{image}.jpg' alt={alt}>
     </picture>
 </div>

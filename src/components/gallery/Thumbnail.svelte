@@ -6,12 +6,12 @@
 
 <div class="thumbnail-container">
     <picture>
-        <source srcset='/images/gallery/{thumbImg}.webp' type="image/webp" />
-        <source srcset='/images/gallery/{thumbImg}.jpg' type="image/jpg" />
+        <source srcset='../images/gallery/{thumbImg}.webp' type="image/webp" />
+        <source srcset='../images/gallery/{thumbImg}.jpg' type="image/jpg" />
         <img 
             class='sample cursor'
             class:active={selected}
-            src='/images/gallery/{thumbImg}.jpg'
+            src='../images/gallery/{thumbImg}.jpg'
             alt={alt}
             on:click>
     </picture>
