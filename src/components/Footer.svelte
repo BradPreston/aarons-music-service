@@ -1,5 +1,10 @@
+<script>
+    const date = new Date();
+    export let year = date.getFullYear();
+</script>
+
 <footer>
-    <p>&copy; 2021 | Aaron's Music Service</p>
+    <p>&copy; <span id="year">{year}</span> | Aaron's Music Service</p>
     <p>Site by <a href='https://www.bradpreston.dev' target='_blank'>Brad Preston</a></p>
 </footer>
 
