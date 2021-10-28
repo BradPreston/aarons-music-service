@@ -12,6 +12,7 @@
     <section>
     <h1>Our History</h1>
         <main>
+            <h2>Aaron Cowles</h2>
         <picture>
             <source srcset="/images/aaron.webp" type="image/webp" />
             <source srcset="/images/aaron.jpg" type="image/jpg" />
@@ -34,6 +35,48 @@
         <p>In the mid 1990s he acquired a 1934 Gibson Jumbo acoustic and kept it for himself to play. He had originally bought it thinking it was an early 50s guitar but further investigation proved it to be much earlier. Loving the tone of it, but wanting to protect it from bumps and bruises while playing weekend gigs with a local Bluegrass Gospel band, Aaron built a replica and pronounced it to sound just as good as the original. He subsequently built another of rosewood (the original was mahogany) and kept it as his main guitar for bluegrass from then on. He eventually sold the 1934 to Garnet Rogers who commissioned two more Jubals. Garnet’s friend Greg Brown also commissioned a couple of guitars and next thing you know, Aaron had transitioned from primarily building jazz guitars to bluegrass guitars.</p>
     
         <p>For several years in the 1990s he built jazz guitars with another brand name, Unity. In 1995 he produced several 100th anniversary models (100 years of guitar making in Kalamazoo) that were simply spectacular. The Thom Bresh Special is a prime example of his building style for archtops: <a href="https://www.youtube.com/watch?v=fNfMEGOvPCQ" target="_blank">https://www.youtube.com/watch?v=fNfMEGOvPCQ</a></p>
+
+        <h2>Ed Miller</h2>
+        <picture>
+            <source srcset="/images/ed_portrait.webp" type="image/webp" />
+            <source srcset="/images/ed_portrait.jpg" type="image/jpg" />
+            <img src="/images/ed_portrait.jpg" alt="A portrait of Ed">
+        </picture>
+        <p>Ed Miller was born in January 1968. He grew up in Coldwater, but his grandmother lived here in
+            Vicksburg. One day when he was still in high school he came to Vicksburg to visit his grandma and
+            discovered Aaron’s Music and met Aaron.</p>
+    
+        <picture>
+            <source srcset="/images/ed_banjo.webp" type="image/webp" />
+            <source srcset="/images/ed_banjo.jpg" type="image/jpg" />
+            <img src="/images/ed_banjo.jpg" alt="Ed holding a banjo">
+        </picture>
+        <p>Over the course of time Ed became Aaron’s protégé, learning the art of luthiery. Having learned his crdaft,
+            Ed became the manager at Bobby Hankins Music in Coldwater, and stayed there throughout its
+            changeover to Bert’s Music, and on through the end of its run.</p>
+
+            <p>Ed was a good luthier and built many guitars, mandolins and other instruments throughout his life. He
+                was a fine guitarist as well and was the house guitarist at the Gospel Barn in Hillsdale for many years.</p>
+            
+        <picture>
+            <source srcset="/images/ed_guitar.webp" type="image/webp" />
+            <source srcset="/images/ed_guitar.jpg" type="image/jpg" />
+            <img src="/images/ed_guitar.jpg" alt="Ed playing a guitar">
+        </picture>
+        <p>He was a first rate intellect, raconteur and occasionally a real clown, as in “Scruffy the Clown”, performing
+            for quite a few years in that persona.</p>
+
+        <p>Ed has three sons of whom he was very proud, Eddie, David and Jonathan.</p>
+    
+        <p>When Aaron was diagnosed with cancer in the spring of 2013, Ed made the long trek nearly every day
+            from Coldwater to Vicksburg to help keep the shop running. After Aaron’s passing in December that year,
+            Ed continued to come into the shop regularly and gave much needed help and training to Steve for four
+            years.</p>
+
+        <p>Labor day weekend of 2018 Ed became very ill and went into the hospital, suffered cardiac arrest the next
+                and never recovered, dying in November of that year.</p>
+
+        <p>We miss him terribly here, but take joy in knowing he was a firm believer in Christ.</p>
         </main>
     </section>
 </div>
@@ -52,12 +95,19 @@
         font-weight: 100;
     }
 
+    h2 {
+        font-size: 25px;
+        font-weight: 300;
+        margin: 30px 0 10px 0;
+        text-align: center;
+    }
+
     section {
         padding-bottom: 70px;
         margin: 0 auto;
     }
 
-    section picture:nth-of-type(2) img {
+    section picture:nth-of-type(even) img {
         float: right;
         padding: 5px 0 5px 5px;
     }

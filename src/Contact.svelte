@@ -116,15 +116,11 @@
     }
 
     iframe {
-        width: 80%;
-        height: 400px;
         margin: 0 auto;
+        height: 400px;
     }
 
     @media only screen and (min-width: 481px) {
-        iframe {
-            width: 400px;
-        }
 
         .hours {
             width: 80%;
@@ -151,7 +147,7 @@
 
         iframe {
             width: 500px;
-            height: 500px;
+            /* height: 500px; */
         }
 
         .hours {
