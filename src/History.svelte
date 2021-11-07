@@ -51,7 +51,7 @@
             <source srcset="/images/ed_banjo.jpg" type="image/jpg" />
             <img src="/images/ed_banjo.jpg" alt="Ed holding a banjo">
         </picture>
-        <p>Over the course of time Ed became Aaron’s protégé, learning the art of luthiery. Having learned his crdaft,
+        <p>Over the course of time Ed became Aaron’s protégé, learning the art of luthiery. Having learned his craft,
             Ed became the manager at Bobby Hankins Music in Coldwater, and stayed there throughout its
             changeover to Bert’s Music, and on through the end of its run.</p>
 
