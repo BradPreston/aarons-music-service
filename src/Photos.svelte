@@ -42,7 +42,7 @@
         font-weight: 100;
     }
 
-    @media only screen and (min-width: 769px) {
+    @media only screen and (min-width: 900px) {
         .wrapper {
             width: 60vw;
             margin: 50px auto;

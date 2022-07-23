@@ -134,9 +134,15 @@
         }
     }
 
-    @media only screen and (min-width: 769px) {
-        section {
+    @media only screen and (min-width: 900px) {
+        .wrapper {
             width: 60vw;
+            margin: 50px auto;
+        }
+        section {
+            /* width: 60vw; */
+            /* padding: 20px 40px; */
+            width: 100%;
         }
 
         img {

@@ -22,36 +22,40 @@
 	router.start();
 </script>
 
-<nav>
-	<picture>
-		<source srcset='/images/logo-text.webp' type='image/webp' />
-		<source srcset='/images/logo-text.jpg' type='image/jpg' />
-		<img src='/images/logo-text.jpg' alt='Jubal Logo'>
-	</picture>
+<div class="nav-wrapper">
+	<nav>
+		<a href="/">
+			<picture>
+				<source srcset='/images/logo-text.webp' type='image/webp' />
+				<source srcset='/images/logo-text.jpg' type='image/jpg' />
+				<img src='/images/logo-text.jpg' alt='Jubal Logo'>
+			</picture>
+		</a>
 
-	<div id="nav-links">
-		<a href='/'
-			class={$activeNavLink === 'home' ? 'active' : ''}
-			on:click={() => activeNavLink.set('home')}>
-			Home
-		</a>
-		<a href='/history'
-			class={$activeNavLink === 'history' ? 'active' : ''}
-			on:click={() => activeNavLink.set('history')}>
-			History
-		</a>
-		<a href='/photos'
-			class={$activeNavLink === 'photos' ? 'active' : ''}
-			on:click={() => activeNavLink.set('photos')}>
-			Photos
-		</a>
-		<a href='/contact'
-			class={$activeNavLink === 'contact' ? 'active' : ''}
-			on:click={() => activeNavLink.set('contact')}>
-			Contact
-		</a>
-	</div>
-</nav>
+		<div id="nav-links">
+			<a href='/'
+				class={$activeNavLink === 'home' ? 'active' : ''}
+				on:click={() => activeNavLink.set('home')}>
+				Home
+			</a>
+			<a href='/history'
+				class={$activeNavLink === 'history' ? 'active' : ''}
+				on:click={() => activeNavLink.set('history')}>
+				History
+			</a>
+			<a href='/photos'
+				class={$activeNavLink === 'photos' ? 'active' : ''}
+				on:click={() => activeNavLink.set('photos')}>
+				Photos
+			</a>
+			<a href='/contact'
+				class={$activeNavLink === 'contact' ? 'active' : ''}
+				on:click={() => activeNavLink.set('contact')}>
+				Contact
+			</a>
+		</div>
+	</nav>
+</div>
 
 
 	<svelte:component this={page} />
@@ -149,8 +153,20 @@
 	}
 
 	@media only screen and (min-width: 900px) {
+		.nav-wrapper {
+			width: 100vw;
+			height: 50px;
+			background: var(--white);
+			border-bottom: 1px solid var(--main-color);
+		}
 		nav {
 			padding-right: 0;
+			flex-direction: row;
+			height: 50px;
+			width: 60vw;
+			justify-content: space-between;
+			margin: 0 auto;
+			position: relative;
 		}
 
 		#nav-links {
@@ -162,6 +178,8 @@
 			justify-content: flex-end;
 			align-items: center;
 			padding-right: 10px;
+			/* max-width: 54vw; */
+			width: unset;
 		}
 
 		#nav-links > a {
