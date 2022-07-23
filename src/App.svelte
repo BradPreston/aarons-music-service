@@ -18,21 +18,7 @@
 	router('/contact', () => page = Contact);
 
 	let page;
-
 	
-	const toggleMobileNav = () => {
-		let navLinks = document.getElementById('nav-links');
-		
-		if (navLinks.style.display !== 'flex') {
-			navLinks.style.display = 'flex';
-		} else {
-			navLinks.style.display = 'none';
-		}
-
-		navLinks.addEventListener('click', () => {
-			navLinks.style.display = 'none';
-		});
-	}
 	router.start();
 </script>
 
@@ -65,12 +51,6 @@
 			Contact
 		</a>
 	</div>
-
-	<button on:click={toggleMobileNav}>
-		<span></span>
-		<span></span>
-		<span></span>
-	</button>
 </nav>
 
 
@@ -106,7 +86,7 @@
 	}
 
 	:global(.wrapper) {
-		margin-top: 50px;
+		margin-top: 100px;
 		width: 100vw;
 		height: calc(100vh - 100px);
 		-ms-overflow-style: none;
@@ -122,7 +102,6 @@
 	/* Nav Styles */
 	nav {
 		width: 100%;
-		height: 50px;
 		background: var(--white);
 		position: fixed;
 		top: 0;
@@ -132,26 +111,25 @@
 		z-index: 1000;
 
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		justify-content: center;
 		align-items: center;
 	}
 
 	img {
 		height: 35px;
+		margin-top: 10px;
 	}
 
 	#nav-links {
-		position: absolute;
 		top: 50px;
 		right: 0;
-		display: none;
-		flex-direction: column;
-		align-items: flex-end;
-		padding-right: 20px;
-		background: rgba(255, 255, 255, .9);
+		display: flex;
+		justify-content: space-around;
+		background: var(--white);
 		z-index: 1000;
 		width: 100vw;
-		height: 100vh;
+		max-width: 600px;
 		font-weight: 300;
 	}
 
@@ -159,41 +137,11 @@
 		margin: 10px 0;
 		text-decoration: none;
 		color: var(--black);
-		font-size: 3rem;
-	}
-
-	a:first-of-type {
-		margin-top: 20px;
+		font-size: 1.8rem;
 	}
 
 	a:hover {
 		color: var(--main-color);
-	}
-
-	button {
-		height: 50px;
-		width: 30px;
-		padding: 15px 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		border: none;
-		background: transparent;
-	}
-
-	button:hover {
-		cursor: pointer;
-	}
-
-	button:hover > span {
-		background: var(--main-color);
-	}
-
-	span {
-		width: 100%;
-		height: 3px;
-		border-radius: 10px;
-		background: var(--black);
 	}
 
 	.active {
@@ -231,10 +179,6 @@
 
 		#nav-links > a:hover {
 			border-bottom: 3px solid var(--main-color);
-		}
-
-		button {
-			display: none;
 		}
 
 		#nav-links > .active {
