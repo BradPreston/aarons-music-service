@@ -35,6 +35,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        /* margin-top: -50px; */
     }
 
     .hero {
@@ -123,6 +124,9 @@
     }
 
     @media only screen and (min-width: 900px) {
+        .wrapper {
+            margin-top: -25px;
+        }
         h1 {
             font-size: 7rem;
             line-height: .9;
